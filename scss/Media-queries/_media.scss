@@ -23,7 +23,7 @@
        }
    
         & ul li a:hover{ 
-                   color: $contac;   
+                   color: $contact;   
        }
    
         & ul li:hover ul{ 
@@ -57,7 +57,7 @@
    }
    
    .nosotros{  
-       color: $bordon;
+       color: $NavFooter;
        font-size: 5em;
        font-weight: 600;
        margin-top: 0;
@@ -187,13 +187,13 @@
   .contactForm {
     form {
       margin: 0;
-      padding: 10px;
+      padding: 1em;
       font-size: 2em;
   
       input, textarea {
-        width: 80%;
+        width: 100%;
         margin: 1em 0;
-        padding: 0.8em;
+        padding: 0.8em 0.8em 0.8em 0;
         font-size: 1em;
       }
   
@@ -201,7 +201,7 @@
         width: 100%;
         margin: 1em 0;
         padding: 0.8em;
-        font-size: 2em;
+        font-size: 1em;
   
         &:hover, &:focus {
           background: $contact;

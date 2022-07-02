@@ -1,5 +1,5 @@
 footer{
-    background-color: rgb(103,13,15);
+    background-color: $NavFooter;
     text-align: center;
     margin-top: 1em;   
     
@@ -11,46 +11,46 @@ footer{
 /*Index*/
 .footerH2{
     margin-top: 0.6em;
-    font-family: "DejaVu Sans";
+    font-family: $FontFp1;
     font-size: 2em;
-    color: pink;
+    color: $pinky;
 }
 /*Promociones*/
 .productosH2 {
     margin-top: 0.6em;
-    font-family: "DejaVu Sans";
-    font-size: 3em;
-    color: pink;
+    font-family: $FontFp1;
+    font-size: 2em;
+    color: $pinky;
 }
 
 /*Tortas*/
 .tortasH2 {
     margin-top: 0.6em;
-    font-family: "DejaVu Sans";
-    font-size: 3em;
-    color: pink;
+    font-family: $FontFp1;
+    font-size: 2em;
+    color: $pinky;
   }
 
 /*Magdalenas*/
 .magdalenasH2 {
     margin-top: 0.6em;
-    font-family: "DejaVu Sans";
-    font-size: 3em;
-    color: pink;
+    font-family: $FontFp1;
+    font-size: 2em;
+    color: $pinky;
   }
 
   /*Contactos*/
   .contactanosH3 {
     margin-top: 0.6em;
-    font-family: "DejaVu Sans";
-    font-size: 3em;
-    color: pink;
+    font-family: $FontFp1;
+    font-size: 2em;
+    color: $pinky;
   }
 
   /*Ayuda*/
   .ayudaH2 {
     margin-top: 0.6em;
-    font-family: "DejaVu Sans";
-    font-size: 3em;
-    color: pink;
+    font-family: $FontFp1;
+    font-size: 2em;
+    color: $pinky;
   }

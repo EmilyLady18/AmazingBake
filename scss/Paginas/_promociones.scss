@@ -1,0 +1,39 @@
+/*Productos css*/
+#contenedorProductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+
+}
+.productosH1{    
+text-align: center;
+font-size: 3em ;
+font-family: $FontFp1;
+font-weight: 600;
+color: $magenta;
+margin: 1em 0 ;
+
+}
+.encabezadoGif{
+width: 98vw;
+margin: 1em 0;
+}
+.producImg{
+width: 47vw;
+margin-left: 0.3em;
+margin-right: 0.3em;
+border-radius: 1em;
+}
+.subProc{
+font-size: 1.8em;
+font-family: $FontFp1;
+color: $negro;   
+margin: 0.2em 0 0.2em 0.8em;
+}
+.precProc{
+font-size: 1.8em;
+font-family: $FontFp1;
+color: $Orange;
+margin: 0.5em 0 0.2em 3em;
+}

@@ -1,0 +1,42 @@
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nosotros{
+    margin-top: 1em;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3em ;
+    font-family: $FontFp1;
+    color: $magenta;
+    
+}
+.indexp1{
+    margin: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: $FontFp1;
+    color: $negro;
+}
+.indexImg{
+    width: 100vw;
+    margin-top: 0.6em;
+}
+.indexImgIcon{
+    width: 10vw;
+}
+.mobileNone{
+   display: none;
+}
+
+.div1{
+    text-align: center;
+    margin: 1em 0;
+    background-color: $Orange;
+}
+.indexP2{
+    text-align: center;
+    font-size: 1.8em;
+    font-family:$fontFp2;
+    color: $negro;
+}
