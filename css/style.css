@@ -57,7 +57,7 @@ body {
   color: black;
   text-align: center;
   font-size: 1.8em;
-  font-font-family: Georgia, "Times New Roman", Times, serif; }
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 /*Productos css*/
 #contenedorProductos {
@@ -248,11 +248,11 @@ body {
   overflow-y: hidden; }
 
 .textP2 {
+  font-family: "DejaVu Sans";
+  font-size: 2em;
   text-align: none;
   margin: 1em 0 1em 1em;
-  color: black;
-  font-family: "DejaVu Sans";
-  font-font-size: 2em; }
+  color: black; }
 
 footer {
   background-color: #670d0f;
