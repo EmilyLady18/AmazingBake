@@ -1,5 +1,5 @@
 body{
-    background-color: $Body;
+    background-color: map-get( $color, "Body" );
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-size: 62.5%;

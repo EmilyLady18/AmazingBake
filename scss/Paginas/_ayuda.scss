@@ -1,40 +1,40 @@
 #contenedorAyuda{
     display: grid;
     grid-template-columns: 1fr;
-}
-.ayudaH1{
-    margin-top: 1em;
-    text-align: center;
-    font-size: 4em ;
-    font-family: $FontFp1;
-    font-weight: 600;
-    color: $magenta; 
-}
-.subtAyuda{
-    width: 80vw;
-    
-    ul li{
-        list-style: none;
     }
-}
+.ayudaH1{
+       @extend .magH1;
+       color: "titulo"  ;
+    }
+.subtAyuda{
+        width: 80vw;
+        
+        ul li{
+            list-style: none;
+        }
+    }
 .question{
-    margin-top: 1em;
-    font-family:$FontFp1;
-    font-size: 2.5em;
-    color: $Orange;
-    padding: 1em ;
-    margin: 1em 0 ;
-    text-align: left;  
-    overflow-x: hidden;
-    overflow-y: hidden;
+        font: {
+            family:$FontFp1;
+            size: 2.5em;
+        }
+        margin-top: 1em;
+        color: $Orange;
+        padding: 1em ;
+        margin: 1em 0 ;
+        text-align: left;  
+        overflow: {
+            x: hidden;
+            y: hidden;
+        }
 
-}
+    }
 .textP2{
-    text-align: none;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 1em;    
-    font-family:$FontFp1;
-    font-size: 2em;
-    color: $negro ;
-}
+        text-align: none;
+        margin: 1em 0 1em 1em;    
+        color: $negro ;
+        font: {
+            family:$FontFp1;
+            font-size: 2em;
+            }
+    }

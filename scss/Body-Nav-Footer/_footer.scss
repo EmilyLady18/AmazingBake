@@ -1,56 +1,76 @@
 footer{
-    background-color: $NavFooter;
+    background-color: map-get( $color, "NavFooter" );
     text-align: center;
     margin-top: 1em;   
     
     img{ 
-        width: 3em;
+        width: 12%;
         margin: 1em 0;
+        padding-right: 0.9em;
     }
-}
+  }
 /*Index*/
 .footerH2{
+    padding-top: 0.5em;
     margin-top: 0.6em;
-    font-family: $FontFp1;
-    font-size: 2em;
     color: $pinky;
-}
+    font: {
+      family: $FontFp1;
+      size: 3em;
+    }
+    
+  }
 /*Promociones*/
 .productosH2 {
+    padding-top: 0.5em;
     margin-top: 0.6em;
-    font-family: $FontFp1;
-    font-size: 2em;
     color: $pinky;
-}
+    font: {
+      family: $FontFp1;
+      size: 3em;
+    }
+  }
 
 /*Tortas*/
 .tortasH2 {
+    padding-top: 0.5em;
     margin-top: 0.6em;
-    font-family: $FontFp1;
-    font-size: 2em;
     color: $pinky;
+    font: {
+      family: $FontFp1;
+      size: 3em;
+    }
   }
 
 /*Magdalenas*/
 .magdalenasH2 {
+    padding-top: 0.5em;
     margin-top: 0.6em;
-    font-family: $FontFp1;
-    font-size: 2em;
     color: $pinky;
+    font: {
+      family: $FontFp1;
+      size: 3em;
+    }
   }
 
   /*Contactos*/
   .contactanosH3 {
+    padding-top: 0.5em;
     margin-top: 0.6em;
-    font-family: $FontFp1;
-    font-size: 2em;
     color: $pinky;
+    font: {
+      family: $FontFp1;
+      size: 3em;
+    }
   }
 
   /*Ayuda*/
   .ayudaH2 {
+    padding-top: 0.5em;
     margin-top: 0.6em;
-    font-family: $FontFp1;
-    font-size: 2em;
     color: $pinky;
+    font: {
+      family: $FontFp1;
+      size: 3em;
+    }
   }

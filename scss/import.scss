@@ -1,5 +1,6 @@
 @import "Variables/_Font-family";
 @import "Variables/_color";
+@import "Variables/_mixin";
 @import "Body-Nav-Footer/_body";
 @import "Body-Nav-Footer/_nav";
 @import "Paginas/_index";
@@ -9,4 +10,6 @@
 @import "Paginas/_contactanos";
 @import "Paginas/_ayuda";
 @import "Body-Nav-Footer/_footer";
-@import "Media-queries/_media";
+@import "Media-queries/_780px";
+@import "Media-queries/_830px";
+

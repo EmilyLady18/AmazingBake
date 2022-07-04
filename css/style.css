@@ -9,11 +9,13 @@ body {
   background-color: #670d0f; }
   #nav ul li a {
     text-decoration: none;
-    font-size: 1em;
+    font-size: 3em;
     color: pink;
     font-family: "DejaVu Sans"; }
   #nav ul li {
     margin: 1em; }
+  #nav li ul a {
+    font-size: 2em; }
   #nav li:hover ul {
     background-color: black; }
 
@@ -24,20 +26,20 @@ body {
 .nosotros {
   margin-top: 1em;
   text-align: center;
+  color: #F01945;
   font-weight: 600;
   font-size: 3em;
-  font-family: "DejaVu Sans";
-  color: #F01945; }
+  font-family: "DejaVu Sans"; }
 
 .indexp1 {
   margin: 1em;
+  color: black;
   text-align: center;
   font-size: 1.5em;
-  font-family: "DejaVu Sans";
-  color: black; }
+  font-family: "DejaVu Sans"; }
 
 .indexImg {
-  width: 100vw;
+  width: 100%;
   margin-top: 0.6em; }
 
 .indexImgIcon {
@@ -52,10 +54,10 @@ body {
   background-color: #F36444; }
 
 .indexP2 {
+  color: black;
   text-align: center;
   font-size: 1.8em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black; }
+  font-font-family: Georgia, "Times New Roman", Times, serif; }
 
 /*Productos css*/
 #contenedorProductos {
@@ -66,11 +68,11 @@ body {
 
 .productosH1 {
   text-align: center;
+  color: #F01945;
+  margin: 1em 0;
   font-size: 3em;
   font-family: "DejaVu Sans";
-  font-weight: 600;
-  color: #F01945;
-  margin: 1em 0; }
+  font-weight: 600; }
 
 .encabezadoGif {
   width: 98vw;
@@ -78,9 +80,8 @@ body {
 
 .producImg {
   width: 47vw;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
-  border-radius: 1em; }
+  margin: 0 0.3em;
+  border-radius: 0.5em; }
 
 .subProc {
   font-size: 1.8em;
@@ -103,17 +104,16 @@ body {
 
 .tortasH1 {
   text-align: center;
+  color: #F01945;
+  margin: 1em 0;
   font-size: 3em;
   font-family: "DejaVu Sans";
-  font-weight: 600;
-  color: #F01945;
-  margin: 1em 0; }
+  font-weight: 600; }
 
 .tortasImg {
   width: 47vw;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
-  border-radius: 1em; }
+  margin: 0 0.3em;
+  border-radius: 0.5em; }
 
 .subTor {
   font-size: 1.8em;
@@ -134,24 +134,18 @@ body {
   column-gap: 0.5em;
   row-gap: 0.5em; }
 
-.magH1 {
+.magH1, .ayudaH1 {
   text-align: center;
-  font-size: 3em;
-  font-family: "DejaVu Sans";
-  font-weight: 600;
   color: #F01945;
-  margin: 1em 0; }
+  margin: 1em 0;
+  font-size: 4em;
+  font-family: "DejaVu Sans";
+  font-weight: 600; }
 
 .magImg {
   width: 47vw;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
-  border-radius: 1em; }
-
-.magdalenasH2 {
-  font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: pink; }
+  margin: 0 0.3em;
+  border-radius: 0.5em; }
 
 .subMag {
   font-size: 1.8em;
@@ -172,11 +166,11 @@ body {
 
 .contactanos {
   margin: 1em 0;
+  color: black;
   text-transform: uppercase;
   text-align: center;
-  color: black;
   font-family: "DejaVu Sans";
-  font-size: 2em;
+  font-size: 4em;
   font-weight: 600; }
 
 .contactWrapper > * {
@@ -187,60 +181,55 @@ body {
 
 .contactForm form {
   font-family: "DejaVu Sans";
-  font-size: 2em;
+  font-font-size: 2em;
   color: white; }
 
 .contactForm form input, .contactForm form textarea {
   width: 100%;
-  margin: 0.8em 0.8em 0 0.8em;
+  margin: 0.8em 0;
   border: none;
   background: none;
   outline: 0;
   color: white;
   border-bottom: 0.2em solid black;
-  font-size: 1em; }
+  font-size: 1.3em; }
 
 .contactForm form button {
   width: 100%;
   margin: 0.8em 0;
-  font-size: 1em;
-  font-family: "DejaVu Sans";
-  background-color: black;
   border: none;
   outline: 0;
-  color: white; }
+  color: white;
+  font-size: 1.6em;
+  font-family: "DejaVu Sans";
+  background-color: black; }
 
 .contactInfo {
-  font-size: 2em;
-  font-family: "DejaVu Sans";
   color: white;
-  background-color: black; }
+  background-color: black;
+  font-size: 2em;
+  font-font-family: "DejaVu Sans"; }
   .contactInfo h2 {
     text-align: center;
     margin: 1em 0; }
   .contactInfo ul {
     list-style: none;
     text-align: center;
-    margin: 0.2em 0; }
+    margin: 0.2em 1.8em 0.2em 0; }
 
 .map {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 50vh;
-  border: 0; }
+  height: 28vh;
+  margin: 1em 0; }
 
 #contenedorAyuda {
   display: grid;
   grid-template-columns: 1fr; }
 
 .ayudaH1 {
-  margin-top: 1em;
-  text-align: center;
-  font-size: 4em;
-  font-family: "DejaVu Sans";
-  font-weight: 600;
-  color: #F01945; }
+  color: "titulo"; }
 
 .subtAyuda {
   width: 80vw; }
@@ -248,9 +237,9 @@ body {
     list-style: none; }
 
 .question {
-  margin-top: 1em;
   font-family: "DejaVu Sans";
   font-size: 2.5em;
+  margin-top: 1em;
   color: #F36444;
   padding: 1em;
   margin: 1em 0;
@@ -260,69 +249,74 @@ body {
 
 .textP2 {
   text-align: none;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin: 1em 0 1em 1em;
+  color: black;
   font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: black; }
+  font-font-size: 2em; }
 
 footer {
   background-color: #670d0f;
   text-align: center;
   margin-top: 1em; }
   footer img {
-    width: 3em;
-    margin: 1em 0; }
+    width: 12%;
+    margin: 1em 0;
+    padding-right: 0.9em; }
 
 /*Index*/
 .footerH2 {
+  padding-top: 0.5em;
   margin-top: 0.6em;
+  color: pink;
   font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: pink; }
+  font-size: 3em; }
 
 /*Promociones*/
 .productosH2 {
+  padding-top: 0.5em;
   margin-top: 0.6em;
+  color: pink;
   font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: pink; }
+  font-size: 3em; }
 
 /*Tortas*/
 .tortasH2 {
+  padding-top: 0.5em;
   margin-top: 0.6em;
+  color: pink;
   font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: pink; }
+  font-size: 3em; }
 
 /*Magdalenas*/
 .magdalenasH2 {
+  padding-top: 0.5em;
   margin-top: 0.6em;
+  color: pink;
   font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: pink; }
+  font-size: 3em; }
 
 /*Contactos*/
 .contactanosH3 {
+  padding-top: 0.5em;
   margin-top: 0.6em;
+  color: pink;
   font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: pink; }
+  font-size: 3em; }
 
 /*Ayuda*/
 .ayudaH2 {
+  padding-top: 0.5em;
   margin-top: 0.6em;
+  color: pink;
   font-family: "DejaVu Sans";
-  font-size: 2em;
-  color: pink; }
+  font-size: 3em; }
 
 @media screen and (min-width: 780px) {
   /*Empieza index*/
   #desktop {
     display: grid;
     grid-template-areas: "desk2 desk1";
-    grid-column-gap: 3em; }
+    grid-column-gap: 8%; }
   .desk1 {
     grid-area: desk1; }
   .desk2 {
@@ -360,9 +354,10 @@ footer {
     font-weight: 600;
     margin-top: 0; }
   .footerH2 {
+    margin-top: 0;
     font-size: 3em; }
   footer img {
-    width: 3.5em; }
+    width: 5em; }
   /*Empieza productos*/
   .productosH1 {
     font-size: 4em; }
@@ -380,6 +375,7 @@ footer {
   .precProc {
     margin: 0.5em 0 1em 2em; }
   .productosH2 {
+    margin-top: 0;
     font-size: 3em; }
   /*Empieza tortas*/
   #contenedorTortas {
@@ -400,13 +396,14 @@ footer {
     font-size: 2em;
     margin: 0.5em 0 1em 2.5em; }
   .tortasH2 {
+    margin-top: 0;
     font-size: 3em; }
   /*Magdalenas*/
   #contenedorMag {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto; }
-  .magH1 {
+  .magH1, .ayudaH1 {
     font-size: 5em;
     font-weight: 600; }
   .magImg {
@@ -420,6 +417,7 @@ footer {
     font-size: 2em;
     margin: 0.5em 0 1em 3em; }
   .magdalenasH2 {
+    margin-top: 0;
     font-size: 3em; }
   /*Contactanos*/
   .contactWrapper {
@@ -441,7 +439,7 @@ footer {
     padding: 1em;
     font-size: 2em; }
     .contactForm form input, .contactForm form textarea {
-      width: 100%;
+      width: 85%;
       margin: 1em 0;
       padding: 0.8em 0.8em 0.8em 0;
       font-size: 1em; }
@@ -477,7 +475,7 @@ footer {
       padding: 1em;
       text-align: center; }
   .contactanosH3 {
-    margin-top: 0.9em;
+    margin-top: 0;
     font-size: 3em; }
   /*Ayuda*/
   .ayudaH1 {
@@ -494,4 +492,14 @@ footer {
   .textP2 {
     font-size: 2.5em; }
   .ayudaH2 {
+    margin-top: 0;
     font-size: 3em; } }
+
+@media screen and (min-width: 830px) {
+  /*Empieza index*/
+  #desktop {
+    display: grid;
+    grid-template-areas: "desk2 desk1";
+    grid-column-gap: 10%; }
+  .indexImg {
+    width: 95%; } }

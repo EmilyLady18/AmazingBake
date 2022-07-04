@@ -1,0 +1,16 @@
+@media screen and (min-width:  830px){
+
+    /*Empieza index*/
+   
+   #desktop{
+       display: grid;
+       grid-template-areas: 
+       "desk2 desk1";
+       grid-column-gap: 10%;      
+   }
+
+   .indexImg{
+    width: 95%;
+}
+
+}

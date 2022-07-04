@@ -1,0 +1,20 @@
+@mixin organizador( $with , $margin1 , $radius) {
+    width: $with;
+    margin: $margin1;
+    border-radius: $radius;
+}
+
+@mixin subTitulos( $fontS , $fontF , $color1 , $margin2) {
+    font-size: $fontS; 
+    font-family: $fontF;
+    color: $color1;   
+    margin: $margin2;
+    
+}
+
+@mixin precios( $fontS2 , $fontF2 , $color2 , $margin3 ) {
+    font-size: $fontS2;
+    font-family: $fontF2;
+    color: $color2;
+    margin: $margin3;    
+}

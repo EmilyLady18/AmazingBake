@@ -7,33 +7,25 @@
 
 }
 .productosH1{    
-text-align: center;
-font-size: 3em ;
-font-family: $FontFp1;
-font-weight: 600;
-color: $magenta;
-margin: 1em 0 ;
-
-}
+        text-align: center;
+        color: $magenta;
+        margin: 1em 0 ;
+        font: {
+            size: 3em ;
+            family: $FontFp1;
+            weight: 600;
+        }
+    }
 .encabezadoGif{
-width: 98vw;
-margin: 1em 0;
-}
+    width: 98vw;
+    margin: 1em 0;
+    }
 .producImg{
-width: 47vw;
-margin-left: 0.3em;
-margin-right: 0.3em;
-border-radius: 1em;
-}
+    @include organizador( 47vw , 0 0.3em , 0.5em );
+    }
 .subProc{
-font-size: 1.8em;
-font-family: $FontFp1;
-color: $negro;   
-margin: 0.2em 0 0.2em 0.8em;
-}
+    @include subTitulos( 1.8em , $FontFp1 , $negro , 0.2em 0 0.2em 0.8em );
+    }
 .precProc{
-font-size: 1.8em;
-font-family: $FontFp1;
-color: $Orange;
-margin: 0.5em 0 0.2em 3em;
-}
+    @include precios( 1.8em , $FontFp1 , $Orange , 0.5em 0 0.2em 3em );
+    }
