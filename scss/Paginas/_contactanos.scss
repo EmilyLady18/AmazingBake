@@ -5,17 +5,14 @@
 }
 .contactanos{
         margin: 1em 0;
+        text-transform: uppercase;
+        text-align: center;
         color: $negro;
-        text: {
-            transform: uppercase;
-            align: center;
-    }
-        font: {
-            family:$FontFp1;
-            size: 4em; 
-            weight: 600
-    }
+        font-family:$FontFp1;
+        font-size: 4em; 
+        font-weight: 600;
 }
+
 .contactWrapper > *{
     padding: 0.5em;
 }
@@ -23,10 +20,8 @@
     background-color:  $Orange;
 }
 .contactForm form{
-    font: {
-        family: $FontFp1;
-        font-size: 2em
-    }
+    font-family: $FontFp1;
+    font-size: 2em;
     color: $blanco;
 }
 .contactForm form{
@@ -42,37 +37,31 @@
         font-size: 1.3em;
     }
     button{
-        width: 100%;
-        margin: 0.8em 0;
-        border: none;
-        outline: 0;
-        color: $blanco;
-        font: {
-            size: 1.6em;
-            family:$FontFp1;
-        }
-
-        background-color:$negro;
-    
+    width: 100%;
+    margin: 0.8em 0;
+    font-size: 1.6em;
+    font-family:$FontFp1;
+    background-color:$negro;
+    border: none;
+    outline: 0;
+    color: $blanco;
     }
 }
 .contactInfo{
-        color: $blanco;
-        background-color: $negro ;
-        font: {
-            size: 2em;
-            font-family: $FontFp1;
-        }
-        
-        h2{
-            text-align: center;
-            margin: 1em 0;
-        }
-        ul{
-            list-style: none;
-            text-align: center;
-            margin: 0.2em 1.8em 0.2em 0;
-        }
+    font-size: 2em;
+    font-family: $FontFp1;
+    color: $blanco;
+    background-color: $negro ;
+
+    h2{
+        text-align: center;
+        margin: 1em 0;
+    }
+    ul{
+        list-style: none;
+        text-align: center;
+        margin: 0.2em 1.8em 0.2em 0;
+    }
 }
 .map{
     display: flex;
