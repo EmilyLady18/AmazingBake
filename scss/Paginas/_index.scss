@@ -6,20 +6,17 @@
         margin-top: 1em;
         text-align: center;
         color: $magenta;
-        font: {
-            weight: 600;
-            size: 3em ;
-            family: $FontFp1;
-        }
+        font-weight: 600;
+        font-size: 3em ;
+        font-family: $FontFp1;
     }
 .indexp1{
         margin: 1em;
         color: $negro;
         text-align: center;
-        font: {
-            size: 1.5em;
-            family: $FontFp1;
-        }
+        font-size: 1.5em;
+        font-family: $FontFp1;
+        
     }
 .indexImg{
     width: 100%;
@@ -40,8 +37,6 @@
 .indexP2{
         color: $negro;
         text-align: center;
-        font: {
-            size: 1.8em;
-            font-family:$fontFp2;
-    }
+        font-size: 1.8em;
+        font-family:$fontFp2;
     }
