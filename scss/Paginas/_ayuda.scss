@@ -4,7 +4,7 @@
     }
 .ayudaH1{
        @extend .magH1;
-       color: "titulo"  ;
+       color: map-get( $color, "titulo" ) ;
     }
 .subtAyuda{
         width: 80vw;

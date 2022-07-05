@@ -229,7 +229,7 @@ body {
   grid-template-columns: 1fr; }
 
 .ayudaH1 {
-  color: "titulo"; }
+  color: gray; }
 
 .subtAyuda {
   width: 80vw; }
