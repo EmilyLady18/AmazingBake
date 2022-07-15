@@ -1,7 +1,7 @@
 /*magdalenas css*/
 #contenedorMag{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 0.5em;
     row-gap: 0.5em;
 }
@@ -17,7 +17,7 @@
 }
 
 .magImg{
-    @include organizador( 47vw , 0 0.3em , 0.5em);
+    @include organizador( 80vw , block , center , 0.5em);
 }
 .subMag{
     @include subTitulos( 1.8em , $FontFp1 , $negro , 0.2em 0 0.2em 0.8em );

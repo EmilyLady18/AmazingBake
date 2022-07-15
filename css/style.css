@@ -62,7 +62,7 @@ body {
 /*Productos css*/
 #contenedorProductos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 0.5em;
   row-gap: 0.5em; }
 
@@ -98,9 +98,7 @@ body {
 /*Tortas css*/
 #contenedorTortas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 0.5em;
-  row-gap: 0.5em; }
+  grid-template-columns: 1fr; }
 
 .tortasH1 {
   text-align: center;
@@ -111,26 +109,26 @@ body {
   font-weight: 600; }
 
 .tortasImg {
-  width: 47vw;
+  width: 80vw;
   margin: 0 0.3em;
   border-radius: 0.5em; }
 
 .subTor {
-  font-size: 1.8em;
+  font-size: 3em;
   font-family: "DejaVu Sans";
   color: black;
   margin: 0.2em 0 0.2em 0.8em; }
 
 .precTor {
-  font-size: 1.8em;
+  font-size: 3em;
   font-family: "DejaVu Sans";
   color: #F36444;
-  margin: 0.5em 0 0.2em 3em; }
+  margin: 0.2em 0 0.2em 3em; }
 
 /*magdalenas css*/
 #contenedorMag {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 0.5em;
   row-gap: 0.5em; }
 
@@ -310,6 +308,201 @@ footer {
   color: pink;
   font-family: "DejaVu Sans";
   font-size: 3em; }
+
+@media screen and (min-width: 480px) {
+  #contenedor {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .nosotros {
+    margin-top: 1em;
+    text-align: center;
+    color: #F01945;
+    font-weight: 600;
+    font-size: 3em;
+    font-family: "DejaVu Sans"; }
+  .indexp1 {
+    margin: 1em;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "DejaVu Sans"; }
+  .indexImg {
+    width: 100%;
+    margin-top: 0.6em; }
+  .indexImgIcon {
+    width: 10vw; }
+  .mobileNone {
+    display: none; }
+  .div1 {
+    text-align: center;
+    margin: 1em 0;
+    background-color: #F36444; }
+  .indexP2 {
+    color: black;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Georgia, "Times New Roman", Times, serif; }
+  #contenedorProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 0.5em; }
+  .productosH1 {
+    text-align: center;
+    color: #F01945;
+    margin: 1em 0;
+    font-size: 3em;
+    font-family: "DejaVu Sans";
+    font-weight: 600; }
+  .encabezadoGif {
+    width: 98vw;
+    margin: 1em 0; }
+  .producImg {
+    width: 47vw;
+    margin: 0 0.3em;
+    border-radius: 0.5em; }
+  .subProc {
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: black;
+    margin: 0.2em 0 0.2em 0.8em; }
+  .precProc {
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: #F36444;
+    margin: 0.5em 0 0.2em 3em; }
+  #contenedorMag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 0.5em; }
+  .magH1, .ayudaH1 {
+    text-align: center;
+    color: #F01945;
+    margin: 1em 0;
+    font-size: 4em;
+    font-family: "DejaVu Sans";
+    font-weight: 600; }
+  .magImg {
+    width: 47vw;
+    margin: 0 0.3em;
+    border-radius: 0.5em; }
+  .subMag {
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: black;
+    margin: 0.2em 0 0.2em 0.8em; }
+  .precMag {
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: #F36444;
+    margin: 0.5em 0 0.2em 3em; }
+  #contenedorTortas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 0.5em; }
+  .tortasH1 {
+    text-align: center;
+    color: #F01945;
+    margin: 1em 0;
+    font-size: 3em;
+    font-family: "DejaVu Sans";
+    font-weight: 600; }
+  .tortasImg {
+    width: 47vw;
+    margin: 0 0.3em;
+    border-radius: 0.5em; }
+  .subTor {
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: black;
+    margin: 0.2em 0 0.2em 0.8em; }
+  .precTor {
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: #F36444;
+    margin: 0.5em 0 0.2em 3em; }
+  #contenedorAyuda {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .ayudaH1 {
+    color: gray; }
+  .subtAyuda {
+    width: 80vw; }
+    .subtAyuda ul li {
+      list-style: none; }
+  .question {
+    font-family: "DejaVu Sans";
+    font-size: 2.5em;
+    margin-top: 1em;
+    color: #F36444;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: hidden; }
+  .textP2 {
+    font-family: "DejaVu Sans";
+    font-size: 2em;
+    text-align: none;
+    margin: 1em 0 1em 1em;
+    color: black; }
+  #contenedorContac {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .contactanos {
+    margin: 1em 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-family: "DejaVu Sans";
+    font-size: 4em;
+    font-weight: 600; }
+  .contactWrapper > * {
+    padding: 0.5em; }
+  .contactForm {
+    background-color: #F36444; }
+  .contactForm form {
+    font-family: "DejaVu Sans";
+    font-size: 2em;
+    color: white; }
+  .contactForm form input, .contactForm form textarea {
+    width: 100%;
+    margin: 0.8em 0;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 0.2em solid black;
+    font-size: 1.3em; }
+  .contactForm form button {
+    width: 100%;
+    margin: 0.8em 0;
+    font-size: 1.6em;
+    font-family: "DejaVu Sans";
+    background-color: black;
+    border: none;
+    outline: 0;
+    color: white; }
+  .contactInfo {
+    font-size: 2em;
+    font-family: "DejaVu Sans";
+    color: white;
+    background-color: black; }
+    .contactInfo h2 {
+      text-align: center;
+      margin: 1em 0; }
+    .contactInfo ul {
+      list-style: none;
+      text-align: center;
+      margin: 0.2em 1.8em 0.2em 0; }
+  .map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 28vh;
+    margin: 1em 0; } }
 
 @media screen and (min-width: 780px) {
   /*Empieza index*/

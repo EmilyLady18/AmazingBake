@@ -1,6 +1,7 @@
-@mixin organizador( $with , $margin1 , $radius) {
+@mixin organizador( $with , $flex, $center , $radius) {
     width: $with;
-    margin: $margin1;
+    display: $flex;
+    justify-content: $center;
     border-radius: $radius;
 }
 

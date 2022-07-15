@@ -1,0 +1,244 @@
+@media screen and (min-width: 480px){
+    #contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+    .nosotros{
+            margin-top: 1em;
+            text-align: center;
+            color: $magenta;
+            font-weight: 600;
+            font-size: 3em ;
+            font-family: $FontFp1;
+        }
+    .indexp1{
+            margin: 1em;
+            color: $negro;
+            text-align: center;
+            font-size: 1.5em;
+            font-family: $FontFp1;    
+        }
+    .indexImg{
+        width: 100%;
+        margin-top: 0.6em;
+        }
+    .indexImgIcon{
+        width: 10vw;
+        }
+    .mobileNone{
+       display: none;
+        }
+    
+    .div1{
+        text-align: center;
+        margin: 1em 0;
+        background-color: $Orange;
+        }
+    .indexP2{
+            color: $negro;
+            text-align: center;
+            font-size: 1.8em;
+            font-family:$fontFp2;
+        }
+    
+        #contenedorProductos{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            column-gap: 0.5em;
+            row-gap: 0.5em;
+        
+        }
+        .productosH1{    
+                text-align: center;
+                color: $magenta;
+                margin: 1em 0 ;
+                font-size: 3em ;
+                font-family: $FontFp1;
+                font-weight: 600;
+        
+            }
+
+
+    .encabezadoGif{
+        width: 98vw;
+        margin: 1em 0;
+            }
+    .producImg{
+        @include organizador( 47vw , 0 0.3em , 0.5em );
+            }
+    .subProc{
+        @include subTitulos( 1.8em , $FontFp1 , $negro , 0.2em 0 0.2em 0.8em );
+            }
+    .precProc{
+            @include precios( 1.8em , $FontFp1 , $Orange , 0.5em 0 0.2em 3em );
+            }
+
+
+    #contenedorMag{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5em;
+        row-gap: 0.5em;
+        }
+        .magH1{    
+           text-align: center;
+                color: $magenta;
+                margin: 1em 0 ;
+                font-size: 4em ;
+                font-family: $FontFp1;
+                font-weight: 600;
+            
+                
+            }
+            
+            .magImg{
+                @include organizador( 47vw , 0 0.3em , 0.5em);
+            }
+            .subMag{
+                @include subTitulos( 1.8em , $FontFp1 , $negro , 0.2em 0 0.2em 0.8em );
+            }
+            .precMag{
+                @include precios( 1.8em , $FontFp1 , $Orange , 0.5em 0 0.2em 3em );
+            }   
+
+            #contenedorTortas{
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                column-gap: 0.5em;
+                row-gap: 0.5em;
+              
+            
+            }
+            .tortasH1{    
+                    text-align: center;
+                    color: $magenta;
+                    margin: 1em 0 ;
+                    font: {
+                        size: 3em ;
+                        family: $FontFp1;
+                        weight: 600;
+                    }
+            
+                }
+            .tortasImg{
+                    @include organizador( 47vw , 0 0.3em , 0.5em);
+                }
+            .subTor{
+                    @include subTitulos( 1.8em , $FontFp1 , $negro , 0.2em 0 0.2em 0.8em );
+                }
+            .precTor{
+                    @include precios( 1.8em , $FontFp1 , $Orange , 0.5em 0 0.2em 3em );
+                }
+
+
+                #contenedorAyuda{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    }
+                .ayudaH1{
+                       
+                       color: map-get( $color, "titulo" ) ;
+                    }
+                .subtAyuda{
+                        width: 80vw;
+                        
+                        ul li{
+                            list-style: none;
+                        }
+                    }
+                .question{
+                        font-family:$FontFp1;
+                        font-size: 2.5em;
+                        margin-top: 1em;
+                        color: $Orange;
+                        padding: 1em ;
+                        margin: 1em 0 ;
+                        text-align: left;  
+                        overflow-x: hidden;
+                        overflow-y: hidden; 
+                        
+                
+                    }
+                .textP2{
+                        font-family:$FontFp1;
+                        font-size: 2em; 
+                        text-align: none;
+                        margin: 1em 0 1em 1em;    
+                        color: $negro ;
+                                 
+                    }
+
+
+
+                    #contenedorContac{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+                    .contactanos{
+                            margin: 1em 0;
+                            text-transform: uppercase;
+                            text-align: center;
+                            color: $negro;
+                            font-family:$FontFp1;
+                            font-size: 4em; 
+                            font-weight: 600;
+                    }
+                    
+                    .contactWrapper > *{
+                        padding: 0.5em;
+                    }
+                    .contactForm{
+                        background-color:  $Orange;
+                    }
+                    .contactForm form{
+                        font-family: $FontFp1;
+                        font-size: 2em;
+                        color: $blanco;
+                    }
+                    .contactForm form{
+                    
+                        input,textarea{
+                            width: 100%;
+                            margin: 0.8em 0;
+                            border: none;
+                            background: none;
+                            outline: 0;
+                            color: $blanco;
+                            border-bottom: 0.2em solid $negro ;
+                            font-size: 1.3em;
+                        }
+                        button{
+                        width: 100%;
+                        margin: 0.8em 0;
+                        font-size: 1.6em;
+                        font-family:$FontFp1;
+                        background-color:$negro;
+                        border: none;
+                        outline: 0;
+                        color: $blanco;
+                        }
+                    }
+                    .contactInfo{
+                        font-size: 2em;
+                        font-family: $FontFp1;
+                        color: $blanco;
+                        background-color: $negro ;
+                    
+                        h2{
+                            text-align: center;
+                            margin: 1em 0;
+                        }
+                        ul{
+                            list-style: none;
+                            text-align: center;
+                            margin: 0.2em 1.8em 0.2em 0;
+                        }
+                    }
+                    .map{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 28vh;
+                        margin: 1em 0;
+                    }
+}

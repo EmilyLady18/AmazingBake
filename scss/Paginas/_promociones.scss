@@ -1,7 +1,7 @@
 /*Productos css*/
 #contenedorProductos{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
     column-gap: 0.5em;
     row-gap: 0.5em;
 
@@ -20,7 +20,7 @@
     margin: 1em 0;
     }
 .producImg{
-     @include organizador( 47vw , 0 0.3em , 0.5em );
+     @include organizador( 80vw , flex , center , 0.5em);
     }
 .subProc{
     @include subTitulos( 1.8em , $FontFp1 , $negro , 0.2em 0 0.2em 0.8em );
