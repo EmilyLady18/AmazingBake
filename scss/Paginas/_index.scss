@@ -5,16 +5,16 @@
 .nosotros{
         margin-top: 1em;
         text-align: center;
-        color: $magenta;
+        color: map-get( $color, "magenta");
         font-weight: 600;
-        font-size: 3em ;
+        font-size: 4em ;
         font-family: $FontFp1;
     }
 .indexp1{
         margin: 1em;
-        color: $negro;
+        color: map-get( $color, "negro");
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
         font-family: $FontFp1;
         
     }
@@ -32,11 +32,11 @@
 .div1{
     text-align: center;
     margin: 1em 0;
-    background-color: $Orange;
+    background-color: map-get( $color, "Orange");
     }
 .indexP2{
-        color: $negro;
+        color: map-get( $color, "negro");
         text-align: center;
-        font-size: 1.8em;
+        font-size: 2em;
         font-family:$fontFp2;
     }

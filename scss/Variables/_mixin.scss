@@ -1,7 +1,5 @@
-@mixin organizador( $with , $flex, $center , $radius) {
+@mixin organizador( $with ,  $radius) {
     width: $with;
-    display: $flex;
-    justify-content: $center;
     border-radius: $radius;
 }
 
@@ -19,3 +17,13 @@
     color: $color2;
     margin: $margin3;    
 }
+
+/*Mixin creado solo para mobile y tablet*/
+@mixin neo($radio, $Bg){
+    border-radius: $radio;
+    background-color:$Bg;
+    
+
+
+}
+    

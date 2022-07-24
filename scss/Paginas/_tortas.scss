@@ -2,23 +2,29 @@
 #contenedorTortas{
     display: grid;
     grid-template-columns: 1fr ;
+
+    figure{
+        justify-self: center;
+        align-self: center;
+        @include neo (12px,  map-get($color , "blanco") )
+    }
 }
 
 .tortasH1{    
         text-align: center;
-        color: $magenta;
+        color:map-get( $color, "NavFooter");
         margin: 1em 0 ;
-        font-size: 3em ;
+        font-size: 4em ;
         font-family: $FontFp1;
         font-weight: 600;
         }
 
 .tortasImg{
-        @include organizador( 80vw , flex , center , 0.5em);
+        @include organizador( 80vw , 0.5em);
     }
 .subTor{
-        @include subTitulos( 3em , $FontFp1 , $negro , 0.2em 0 0.2em 0.8em );
+        @include subTitulos( 3em , $FontFp1 , map-get( $color, "negro") , 0.5em 0 0.5em 0.5em);
     }
 .precTor{
-        @include precios( 3em , $FontFp1 , $Orange , 0.2em 0 0.2em 3em );
+        @include precios( 3em , $FontFp1 , map-get( $color, "Orange") , 0.5em 0 0.5em 0.5em);
     }

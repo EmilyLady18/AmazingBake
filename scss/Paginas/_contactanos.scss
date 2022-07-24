@@ -7,7 +7,7 @@
         margin: 1em 0;
         text-transform: uppercase;
         text-align: center;
-        color: $negro;
+        color: map-get( $color, "negro");
         font-family:$FontFp1;
         font-size: 4em; 
         font-weight: 600;
@@ -17,12 +17,12 @@
     padding: 0.5em;
 }
 .contactForm{
-    background-color:  $Orange;
+    background-color:  map-get( $color, "BgContact");
 }
 .contactForm form{
     font-family: $FontFp1;
     font-size: 2em;
-    color: $blanco;
+    color: map-get( $color, "blanco");
 }
 .contactForm form{
 
@@ -32,8 +32,8 @@
         border: none;
         background: none;
         outline: 0;
-        color: $blanco;
-        border-bottom: 0.2em solid $negro ;
+        color:map-get( $color, "blanco");;
+        border-bottom: 0.2em solid map-get( $color, "negro") ;
         font-size: 1.3em;
     }
     button{
@@ -41,17 +41,17 @@
     margin: 0.8em 0;
     font-size: 1.6em;
     font-family:$FontFp1;
-    background-color:$negro;
+    background-color:map-get( $color, "negro");
     border: none;
     outline: 0;
-    color: $blanco;
+    color: map-get( $color, "blanco");;
     }
 }
 .contactInfo{
     font-size: 2em;
     font-family: $FontFp1;
-    color: $blanco;
-    background-color: $negro ;
+    color: map-get( $color, "blanco");
+    background-color: map-get( $color, "negro") ;
 
     h2{
         text-align: center;
