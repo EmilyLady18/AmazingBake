@@ -120,7 +120,7 @@
       }
     .precTor{
         @include precios( 2.5em, $FontFp1 , map-get( $color, "Orange" ) , 0.5em 0.5em 0.5em );
-      }
+       }
 
    .tortasH2{
       margin-top: 0;
