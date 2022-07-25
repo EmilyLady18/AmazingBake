@@ -89,13 +89,13 @@ body {
   font-size: 3em;
   font-family: "DejaVu Sans";
   color: black;
-  margin: 0.5em 0 0.5em 0.5em; }
+  margin: 0.5em 0 0.5em 0; }
 
 .precProc {
   font-size: 3em;
   font-family: "DejaVu Sans";
   color: #F01945;
-  margin: 0.5em 0 0.5em 0.5em; }
+  margin: 0.5em 0 0.5em 0; }
 
 /*Tortas css*/
 #contenedorTortas {
@@ -121,13 +121,13 @@ body {
   font-size: 3em;
   font-family: "DejaVu Sans";
   color: black;
-  margin: 0.5em 0 0.5em 0.5em; }
+  margin: 0.5em 0 0.5em 0; }
 
 .precTor {
   font-size: 3em;
   font-family: "DejaVu Sans";
   color: #F36444;
-  margin: 0.5em 0 0.5em 0.5em; }
+  margin: 0.5em 0 0.5em 0; }
 
 /*magdalenas css*/
 #contenedorMag {
@@ -153,13 +153,13 @@ body {
   font-size: 3em;
   font-family: "DejaVu Sans";
   color: black;
-  margin: 0.5em 0 0.5em 0.5em; }
+  margin: 0.5em 0 0.5em 0; }
 
 .precMag {
   font-size: 3em;
   font-family: "DejaVu Sans";
   color: #F36444;
-  margin: 0.5em 0 0.5em 0.5em; }
+  margin: 0.5em 0 0.5em 0; }
 
 /*contactos css*/
 #contenedorContac {

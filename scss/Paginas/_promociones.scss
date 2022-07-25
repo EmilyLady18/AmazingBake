@@ -30,9 +30,9 @@
     }
 
 .subProc{
-    @include subTitulos( 3em , $FontFp1 , map-get( $color, "negro") , 0.5em 0 0.5em 0.5em);
+    @include subTitulos( 3em , $FontFp1 , map-get( $color, "negro") , 0.5em 0 0.5em 0);
     }
     
 .precProc{
-    @include precios( 3em , $FontFp1 , map-get( $color, "magenta") , 0.5em 0 0.5em 0.5em );
+    @include precios( 3em , $FontFp1 , map-get( $color, "magenta") , 0.5em 0 0.5em 0 );
     }
