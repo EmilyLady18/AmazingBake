@@ -37,9 +37,8 @@
     #contenedorMag{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 0.5em;
-        row-gap: 0.5em;
-        }
+        
+    }
         .magH1{    
                 color: map-get( $color, "magenta" );
                 font-size: 4em ;

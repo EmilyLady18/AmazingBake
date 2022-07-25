@@ -18,12 +18,3 @@
     margin: $margin3;    
 }
 
-/*Mixin creado solo para mobile y tablet*/
-@mixin neo($radio, $Bg){
-    border-radius: $radio;
-    background-color:$Bg;
-    
-
-
-}
-    

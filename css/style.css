@@ -1,4 +1,3 @@
-/*Mixin creado solo para mobile y tablet*/
 body {
   background-color: #FFE3C9;
   overflow-x: hidden;
@@ -68,9 +67,7 @@ body {
   row-gap: 0.5em; }
   #contenedorProductos figure {
     justify-self: center;
-    align-self: center;
-    border-radius: 12px;
-    background-color: white; }
+    align-self: center; }
 
 .productosH1 {
   text-align: center;
@@ -106,9 +103,7 @@ body {
   grid-template-columns: 1fr; }
   #contenedorTortas figure {
     justify-self: center;
-    align-self: center;
-    border-radius: 12px;
-    background-color: white; }
+    align-self: center; }
 
 .tortasH1 {
   text-align: center;
@@ -140,9 +135,7 @@ body {
   grid-template-columns: 1fr; }
   #contenedorMag figure {
     justify-self: center;
-    align-self: center;
-    border-radius: 12px;
-    background-color: white; }
+    align-self: center; }
 
 .magH1, .ayudaH1 {
   text-align: center;
@@ -349,9 +342,7 @@ footer {
     margin: 0.5em 0.5em 0.5em; }
   #contenedorMag {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.5em;
-    row-gap: 0.5em; }
+    grid-template-columns: 1fr 1fr; }
   .magH1, .ayudaH1 {
     color: #F01945;
     font-size: 4em;

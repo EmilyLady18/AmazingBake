@@ -6,7 +6,6 @@
     figure{
         justify-self: center;
         align-self: center;
-        @include neo (12px,  map-get($color , "blanco") )
 
     }
    
