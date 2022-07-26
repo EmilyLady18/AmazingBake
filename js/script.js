@@ -2,7 +2,7 @@
 function inicio() {
 let compra = true;
     while (compra) {
-        let opcion = prompt("Ingrese la opcion a realizar \n1-Ir al producto \n2 -Agregar al carrito \n3-Cancelar y salir");
+        let opcion = prompt("Ingrese  el numeron a la opcion a realizar \n1-Ir al producto \n2 -Agregar al carrito \n3-Cancelar y salir");
         switch (opcion) {
             case "1":
                 irAlProducto();
