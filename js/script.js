@@ -60,16 +60,16 @@ let compra = true;
                     break;
 
                 case "4":
-                    ElTotal = suma(elTotal,  precioMagdalenasBlueberry);
+                    elTotal = suma(elTotal,  precioMagdalenasBlueberry);
                     listaProductos = agregarProductos(listaProductos, '-Magdalenas blueberry:300$ c/u');
                     console.log(elTotal);
                     alert(listaProductos)
                     break;
 
                 case "5":
-                    ElTotal = suma(elTotal, precioTortaSweetDream);
+                    elTotal = suma(elTotal, precioTortaSweetDream);
                     listaProductos = agregarProductos(listaProductos, '-Torta sweet dream:6950$');
-                    console.log(ElTotal);
+                    console.log(elTotal);
                     alert(listaProductos)
 
                 case "6":
