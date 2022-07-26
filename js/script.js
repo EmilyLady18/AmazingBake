@@ -5,10 +5,10 @@ let compra = true;
         let opcion = prompt("Ingrese la opcion a realizar \n1-Ir al producto \n2 -Agregar al carrito \n3-Cancelar y salir");
         switch (opcion) {
             case "1":
-                IrAlProducto();
+                irAlProducto();
                 break;
             case "2":
-                AgregaralCarrito();
+                agregaralCarrito();
                 compra = false;
             case "3":
                 compra = false;
@@ -20,11 +20,11 @@ let compra = true;
     }
  }
     const suma = (n1, n2) => n1 + n2;
-    const IrAlProducto = function () { alert('Productos:\n1 -Torta corazon: 3600$ \n2 -Magdalenas frutos rojos:250$ c/u \n3 -Torta pinky:2000$ \n4 -Magdalenas blueberry:300$ c/u  \n5 -Torta sweet dream:6950$  \n6 -Magdalenas mouse:360$ c/u \n7 -Torta te gree:6900$ \n8 -Magdalenas florales:300$ c/u'); } 
+    const irAlProducto = function () { alert('Productos:\n1 -Torta corazon: 3600$ \n2 -Magdalenas frutos rojos:250$ c/u \n3 -Torta pinky:2000$ \n4 -Magdalenas blueberry:300$ c/u  \n5 -Torta sweet dream:6950$  \n6 -Magdalenas mouse:360$ c/u \n7 -Torta te gree:6900$ \n8 -Magdalenas florales:300$ c/u'); } 
     const agregarProductos = (lista, productos) => lista + "\n" + productos;
     const finalizarCompra = function (total, lista) { alert("El total es de:" + lista + "\nEl total es de: " + total+"$") }
 
-    function realizarCompra() {
+    function agregaralCarrito() {
         let ElTotal = 0 ;
         let listaProductos = "" ;
         const precioTortaCorazon = 3600;
@@ -90,7 +90,7 @@ let compra = true;
                     alert(listaProductos)
 
                 case "9":
-                    IrAlProducto();
+                    irAlProducto();
                     break;
 
                 case "10":
