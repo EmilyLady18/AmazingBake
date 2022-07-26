@@ -5,10 +5,10 @@ let compra = true;
         let opcion = prompt("Ingrese la opcion a realizar \n1-Ir al producto \n2 -Agregar al carrito \n3-Cancelar y salir");
         switch (opcion) {
             case "1":
-                IrAlProducto ();
+                IrAlProducto();
                 break;
             case "2":
-                AgregaralCarrito ();
+                AgregaralCarrito();
                 compra = false;
             case "3":
                 compra = false;
