@@ -25,7 +25,7 @@ let compra = true;
     const finalizarCompra = function (total, lista) { alert("El total es de:" + lista + "\nEl total es de: " + total+"$") }
 
     function agregaralCarrito() {
-        let ElTotal = 0 ;
+        let elTotal = 0 ;
         let listaProductos = "" ;
         const precioTortaCorazon = 3600;
         const precionMagdalenasFrutosRojos = 250 ;
@@ -41,52 +41,52 @@ let compra = true;
         let opcion = prompt("Que opcion desea agregar. Ingrese 9 para ver los productos y la opcion 10 para terminar");
         switch (opcion) {
                 case "1":
-                    ElTotal = suma(ElTotal, precioTortaCorazon);
+                    elTotal = suma(elTotal, precioTortaCorazon);
                     listaProductos = agregarProducto(listaProductos, '-Torta corazon: 3600$');
-                    console.log(ElTotal);
+                    console.log(elTotal);
                     alert(listaProductos)
                     break;
                 case "2":
-                    ElTotal = suma(ElTotal, precionMagdalenasFrutosRojos);
+                    elTotal = suma(elTotal, precionMagdalenasFrutosRojos);
                     listaProductos = agregarProductos(listaProductos, '-Magdalenas frutos rojos:250$ c/u');
-                    console.log(ElTotal);
+                    console.log(elTotal);
                     alert(listaProductos)
                     break;
                 case "3":
-                    ElTotal = suma(ElTotal, precioTortaPinky);
+                    elTotal = suma(elTotal, precioTortaPinky);
                     listaProductos = agregarProductos(listaProductos, '-Torta pinky:2000$');
-                    console.log(ElTotal);
+                    console.log(elTotal);
                     alert(listaProductos)
                     break;
 
                 case "4":
-                    ElTotal = suma(ElTotal,  precioMagdalenasBlueberry);
+                    ElTotal = suma(elTotal,  precioMagdalenasBlueberry);
                     listaProductos = agregarProductos(listaProductos, '-Magdalenas blueberry:300$ c/u');
-                    console.log(ElTotal);
+                    console.log(elTotal);
                     alert(listaProductos)
                     break;
 
                 case "5":
-                    ElTotal = suma(ElTotal, precioTortaSweetDream);
+                    ElTotal = suma(elTotal, precioTortaSweetDream);
                     listaProductos = agregarProductos(listaProductos, '-Torta sweet dream:6950$');
                     console.log(ElTotal);
                     alert(listaProductos)
 
                 case "6":
-                    ElTotal = suma(ElTotal, precioMagdalenasMouse );
+                    elTotal = suma(elTotal, precioMagdalenasMouse );
                     listaProductos = agregarProductoss(listaProductos, '-Magdalenas mouse:360$ c/u');
-                    console.log(ElTotal);
+                    console.log(elTotal);
                     alert(listaProductos)
                 case "7":
-                    ElTotal = suma(ElTotal, precioTortaTeGree);
+                    elTotal = suma(elTotal, precioTortaTeGree);
                     listaProductos = agregarProductos(listaProductos, '-Torta te gree:6900$');
-                    console.log(ElTotal);
-                    alert(Productos)
+                    console.log(elTotal);
+                    alert(listaProductos)
 
                 case "8":    
-                    ElTotal = suma(ElTotal, precioMagdalenasFlorales);
+                    elTotal = suma(elTotal, precioMagdalenasFlorales);
                     listaProductos = agregarProductos(listaProductos, '-Magdalenas florales:300$ c/u');
-                    console.log(ElTotal);
+                    console.log(elTotal);
                     alert(listaProductos)
 
                 case "9":
@@ -94,7 +94,7 @@ let compra = true;
                     break;
 
                 case "10":
-                    finalizarCompra(ElTotal, listaProductos);
+                    finalizarCompra(elTotal, listaProductos);
                     compra = false;
                     break;
                 default:
