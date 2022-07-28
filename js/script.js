@@ -42,7 +42,7 @@ let compra = true;
         switch (opcion) {
                 case "1":
                     elTotal = suma(elTotal, precioTortaCorazon);
-                    listaProductos = agregarProducto(listaProductos, '-Torta corazon: 3600$');
+                    listaProductos = agregarProductos(listaProductos, '-Torta corazon: 3600$');
                     console.log(elTotal);
                     alert(listaProductos)
                     break;
@@ -74,7 +74,7 @@ let compra = true;
 
                 case "6":
                     elTotal = suma(elTotal, precioMagdalenasMouse );
-                    listaProductos = agregarProductoss(listaProductos, '-Magdalenas mouse:360$ c/u');
+                    listaProductos = agregarProductos(listaProductos, '-Magdalenas mouse:360$ c/u');
                     console.log(elTotal);
                     alert(listaProductos)
                 case "7":
