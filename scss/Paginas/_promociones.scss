@@ -8,6 +8,8 @@
         figure{
             justify-self: center;
             align-self: center;
+            background-color: map-get( $color, "blanco");
+            border-radius: 2em;
         }
     }
 

@@ -67,7 +67,9 @@ body {
   row-gap: 0.5em; }
   #contenedorProductos figure {
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    background-color: white;
+    border-radius: 2em; }
 
 .productosH1 {
   text-align: center;
@@ -455,6 +457,23 @@ footer {
     grid-column-gap: 2em; }
   .productosH1 {
     font-size: 4em; }
+  .contenedores {
+    width: 100%;
+    margin: 3em;
+    padding: auto; }
+  #button {
+    width: 50%;
+    margin: 1em 0;
+    padding: 0.8em;
+    font-size: 1em; }
+    #button:hover, #button:focus {
+      background: #FFCE6F;
+      color: black;
+      transition: background-color 1s ease-out;
+      outline: 0; }
+  #bg {
+    height: 2em;
+    width: 2em; }
   .producImg {
     width: 18vw;
     border-radius: 0.5em; }
@@ -462,12 +481,12 @@ footer {
     font-size: 2.5em;
     font-family: "DejaVu Sans";
     color: black;
-    margin: 0.5em 0.5em 0.5em; }
+    margin: 0.5em 0.5em 0.5em 0; }
   .precProc {
     font-size: 2.5em;
     font-family: "DejaVu Sans";
     color: #F36444;
-    margin: 0.5em 0.5em 0.5em; }
+    margin: 0.5em 0.5em 0.5em 0; }
   .productosH2 {
     margin-top: 0;
     font-size: 3em; }

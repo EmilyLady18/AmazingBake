@@ -19,9 +19,9 @@
 	<title>Amazing Bake Promociones|Oferta, algunos de nuestros productos</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+    <nav class="navbar navbar-light" id="nav">
 		  
-		<div class="container-fluid">
+		<div class="container-fluid navbar-expand-lg ">
 
 		    <a href="../index.html">
 				<img src="../img/logos/logoAB.svg" alt="logo de Amazing Bake">
@@ -31,12 +31,11 @@
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
 
+
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 		        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-			        <li class="nav-item">
-			        	<a class=" active" aria-current="page" href="../index.html">Home</a>
-			        </li>
+			        
 					<li class="nav-item dropdown">
 			            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Menu</a>
 
@@ -57,7 +56,22 @@
 			        </li>
 		        </ul>
 		    </div>
-		</div>
+		</div>			 
+			<button  id="bg" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+				<i class="fa-solid fa-cart-shopping" ></i>
+		  	</button>
+		  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+			<div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tu carrito</h5>
+			  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Link</a>
+				</li>
+			  </ul>
+			</div>
     </nav><!-- Fin del menú -->
             
     <div>                                      <!-- Empieza contenido principal de la pagina-->
@@ -66,54 +80,9 @@
           
           <h1 class="productosH1">Algunos de nuestros productos</h1>
       	
-            <div id="contenedorProductos">
-	      		<figure>
-	      			<img src="../img/img.tortas/tortadecorazon.webp" alt="Torta en forma de corazon" class="producImg">
-	      			<figcaption class="subProc">Torta corazon</figcaption>
-	      			<p class="precProc"> 3.600$ </p> 
-	      		</figure>
-
-	      		<figure>
-	      			<img src="../img/img.magdalenas/magdalenasFrutosdelBosque.webp" alt="Magdalenas elaboradas y decorada con frutos del bosque" class="producImg">
-	      			<figcaption class="subProc">Magdalena tutifruti</figcaption>
-	      			<p class="precProc"> 250$ c/u</p>
-	      		</figure>	
-          
-	      		<figure>
-	      			<img src="../img/img.tortas/tortapink.webp" alt="Torta redonda de color rosado con relleno de frutilla" class="producImg">
-	      			<figcaption class="subProc">Torta pinky</figcaption>
-	      			<p class="precProc"> 2.000$ </p>
-	      		</figure>
-
-	      		<figure>
-	      			<img src="../img/img.magdalenas/magdalenasBlueBerry.webp" alt=" Magdalenas elaborada y decorada con blueberry y chocolate" class="producImg">
-	      			<figcaption class="subProc">Magdalenas Blueberry</figcaption>
-	      			<p class="precProc"> 300$ c/u</p>
-	      		</figure>
-
-				<figure>
-					<img src="../img/img.tortas/tortasweetdream.webp" alt="Torta redonda de color rosa decoraciones con color amarrilo. violeta, celeste y verde, ademas de tener mariposas rosadas con detalles en amarillo y un osito mequeño de color azul" class="producImg">
-					<figcaption class="subProc">Torta sweet dream</figcaption>
-					<p class="precProc">6.950$</p>
-				</figure>
-
-				<figure >
-					<img src="../img/img.magdalenas/mousemag.webp" alt="Magdalenas decoradas como un raton de color rosa, blanco o gris" class="producImg">
-					<figcaption class="subProc">Magdalenas Mouse</figcaption>
-					<p class="precProc"> 360$ c/u</p>
-				</figure>
-
-				<figure>
-					<img src="../img/img.tortas/tegreeHeart.webp" alt="Torta redonda de color verde con decoraciones de color amarillo,verdes y con cerezas" class="producImg">
-					<figcaption class="subProc">Torta Te gree</figcaption>
-					<p class="precProc">6.900$</p>
-				</figure>
-
-				<figure >
-					<img src="../img/img.magdalenas/magFloral.webp" alt="Magdalenas decoradas con diversos tipos de flores" class="producImg">
-					<figcaption class="subProc">Magdalenas Florales</figcaption>
-					<p class="precProc"> 300$ c/u</p>
-				</figure>
+            <div id="contenedorProductos" class="botones">
+				
+	      		<!-- el contenido se encuetra en Javascritp-->
             </div>                               <!-- Termina contenido principal de la pagina-->     
     <footer>
         <h2 class="productosH2">Nuestas redes sociales</h2>
@@ -127,5 +96,7 @@
     </footer> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="../js/script.js"></script>
+<script src="https://kit.fontawesome.com/70269d3aea.js" crossorigin="anonymous"></script>
+
 </body> 
 </html>
