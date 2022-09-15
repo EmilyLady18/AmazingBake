@@ -461,12 +461,17 @@ footer {
     width: 100%;
     margin: 3em;
     padding: auto; }
-  #button {
+  .nav {
+    background-color: red; }
+  .bgl {
+    background-color: pink;
+    overflow-y: scroll; }
+  .button {
     width: 50%;
     margin: 1em 0;
     padding: 0.8em;
     font-size: 1em; }
-    #button:hover, #button:focus {
+    .button:hover, .button:focus {
       background: #FFCE6F;
       color: black;
       transition: background-color 1s ease-out;

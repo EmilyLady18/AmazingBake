@@ -10,8 +10,9 @@ function stock() {
 }
 window.onload = () => {
     stock()
+    cleanCarrito()
     let aux = solicitar();
-    if(aux !=null ){
+    if (aux != null) {
         carrito.push(...aux)
         addItemsAlCarrito()
     }
@@ -57,7 +58,7 @@ function addItems() {
 
 //funcion para que los productos selecionados se muestren en el carrito
 function addItemsAlCarrito() {
-    const compra = document.querySelector('.offcanvas');
+    const compra = document.querySelector('.productos');
     compra.innerHTML = ``;
     for (const product of carrito) {
         const cardProductos = document.createElement('div');
@@ -99,53 +100,28 @@ function guardarStorage() {
 function solicitar() {
     return JSON.parse(sessionStorage.getItem("carrito"))
 }
- 
-//funcion para limpiar todo el carrito
-function cleantCarrito() {
-    carrito.splice(0);
-    addItemsAlCarrito();
-    let canasta = document.getElementById("carrito");
-    canasta.innerHTML = carrito.length == 0 && `<div class="d-block msgSinP"><h3>No hay productos</h3></div>`
-}
 
 
-//boton para finalizar el pedido
-const btnFinal = document.getElementById("btnFinalizar");
-btnFinal.onclick = () => {
-    if (usuarioNow != undefined && usuarioNow != "") {
-        condition = carrito.length != 0 && true;
-        if (condition) {
-            showMetPago()
+function cleanCarrito() {
+    const cleanCar = document.getElementById('finalizar');
+    cleanCar.addEventListener("click", () => {
+        if(carrito.length != 0 ){
+            carrito.splice(0)
+            addItemsAlCarrito()
+            guardarStorage()
+            Toastify({
+                text: "Has eliminado todos los productos",
+                className: "info",
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                }
+            }).showToast();
         }
-    } else {
-        Swal.fire("Registrar", "Para hacer un pedido tiene que logearse o registrarse", "warning")
-    }
-
-
-}
-
-//boton para borrar el pedido
-const eliminar = document.getElementById("borrar");
-eliminar.onclick = () => {
-    condicion = carrito.length != 0 && true;
-    //Swal para la confirmacion de vaciado de Carrito
-    if (condicion) {
-        Swal.fire({
-            title: 'Vaciar Carrito',
-            text: '¿Desea vaciar el carrito?',
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Sí',
-            customClass: {
-                confirmButton: 'btnRed',
-            },
-            cancelButtonText: 'No'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire('Borrado', 'El carrito ha sido vaciado', 'success')
-                cleanCarrito();
-                guardarStorage();
-            }
         })
-    }
+
 }
+
+
+
+
+
