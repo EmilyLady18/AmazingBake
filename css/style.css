@@ -10,7 +10,7 @@ body {
   #nav ul li a {
     text-decoration: none;
     font-size: 3em;
-    color: pink;
+    color: #ffc0cb;
     font-family: "DejaVu Sans"; }
   #nav ul li {
     margin: 1em; }
@@ -271,7 +271,7 @@ footer {
 .footerH2 {
   padding-top: 0.5em;
   margin-top: 0.6em;
-  color: pink;
+  color: #ffc0cb;
   font-family: "DejaVu Sans";
   font-size: 3em; }
 
@@ -279,7 +279,7 @@ footer {
 .productosH2 {
   padding-top: 0.5em;
   margin-top: 0.6em;
-  color: pink;
+  color: #ffc0cb;
   font-family: "DejaVu Sans";
   font-size: 3em; }
 
@@ -287,7 +287,7 @@ footer {
 .tortasH2 {
   padding-top: 0.5em;
   margin-top: 0.6em;
-  color: pink;
+  color: #ffc0cb;
   font-family: "DejaVu Sans";
   font-size: 3em; }
 
@@ -295,7 +295,7 @@ footer {
 .magdalenasH2 {
   padding-top: 0.5em;
   margin-top: 0.6em;
-  color: pink;
+  color: #ffc0cb;
   font-family: "DejaVu Sans";
   font-size: 3em; }
 
@@ -303,7 +303,7 @@ footer {
 .contactanosH3 {
   padding-top: 0.5em;
   margin-top: 0.6em;
-  color: pink;
+  color: #ffc0cb;
   font-family: "DejaVu Sans";
   font-size: 3em; }
 
@@ -311,7 +311,7 @@ footer {
 .ayudaH2 {
   padding-top: 0.5em;
   margin-top: 0.6em;
-  color: pink;
+  color: #ffc0cb;
   font-family: "DejaVu Sans";
   font-size: 3em; }
 
@@ -470,14 +470,25 @@ footer {
     width: 100%;
     margin: 3em;
     padding: auto; }
-  .eliminar {
-    width: 100%;
-    margin: 0.8em 0;
+  .btnDel {
+    width: 50%;
+    margin: 0.5em 1em;
     font-size: 1.6em;
     font-family: "DejaVu Sans";
     border: none;
     outline: 0;
-    color: white; }
+    color: antiquewhite;
+    background-color: #670d0f;
+    overflow-x: hidden; }
+  #finalizar {
+    width: 50%;
+    margin: 2em 6em;
+    font-size: 1.6em;
+    font-family: "DejaVu Sans";
+    border: none;
+    outline: 0;
+    color: black;
+    background-color: antiquewhite; }
   .bgl {
     background-color: #670d0f; }
   .button {

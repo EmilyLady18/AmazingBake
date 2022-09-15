@@ -106,14 +106,27 @@
 
   }
 
-  .eliminar{
-    width: 100%;
-    margin: 0.8em 0;
+  .btnDel{
+    width: 50%;
+    margin: 0.5em 1em;
     font-size: 1.6em;
     font-family:$FontFp1;
     border: none;
     outline: 0;
-    color: map-get( $color, "blanco");
+    color: antiquewhite;
+    background-color:  #670d0f;
+    overflow-x: hidden ;
+  }
+
+  #finalizar{
+    width: 50%;
+    margin: 2em 6em;
+    font-size: 1.6em;
+    font-family:$FontFp1;
+    border: none;
+    outline: 0;
+    color: map-get( $color, "negro");
+    background-color: antiquewhite;
   }
   .bgl{
     background-color:rgb(103,13,15);
