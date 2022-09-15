@@ -492,15 +492,14 @@ footer {
   .bgl {
     background-color: #670d0f; }
   .button {
-    width: 50%;
+    width: 60%;
     margin: 1em 0;
     padding: 0.8em;
-    font-size: 1em; }
-    .button:hover, .button:focus {
-      background: #FFCE6F;
-      color: black;
-      transition: background-color 1s ease-out;
-      outline: 0; }
+    font-size: 1.5em;
+    background-color: #670d0f;
+    color: antiquewhite;
+    outline: 0;
+    font-family: "DejaVu Sans"; }
   #bg {
     height: 2em;
     width: 2em; }

@@ -134,16 +134,15 @@
   }
 
    .button{
-    width: 50%;
+    width: 60%;
     margin: 1em 0;
     padding: 0.8em;
-    font-size: 1em;
-    &:hover, &:focus {
-      background: map-get( $color, "contact" );
-      color: map-get( $color, "negro" );
-      transition: background-color 1s ease-out;
-      outline: 0;
-    }
+    font-size: 1.5em;
+    background-color: #670d0f;
+    color:antiquewhite ;
+    outline: 0;
+    font-family:$FontFp1;
+
   }
    #bg{
     height: 2em;
