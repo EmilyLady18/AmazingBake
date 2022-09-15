@@ -82,6 +82,19 @@
 
 }
    
+  .productos{
+    overflow-y: scroll;
+    height: 80vh;
+    background-color: #FFE3C9;
+
+  }
+
+  .producto2{
+    color: #FFE3C9;
+    text-align: center;
+    margin-top: 1em;
+    font-family: "DejaVu Sans";
+  }
   .productosH1{
        font-size: 4em;
    }
@@ -93,12 +106,18 @@
 
   }
 
-  .nav{
-    background-color: red;
+  .eliminar{
+    width: 100%;
+    margin: 0.8em 0;
+    font-size: 1.6em;
+    font-family:$FontFp1;
+    border: none;
+    outline: 0;
+    color: map-get( $color, "blanco");
   }
   .bgl{
-    background-color: pink;
-    overflow-y: scroll;
+    background-color:rgb(103,13,15);
+    
   }
 
    .button{

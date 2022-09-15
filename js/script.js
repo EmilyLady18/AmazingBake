@@ -48,7 +48,7 @@ function addItems() {
                     text: "Has agregado un producto",
                     className: "info",
                     style: {
-                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                        background: "linear-gradient(to right, #F01945, #ffc0cb)",
                     }
                 }).showToast();
             }
@@ -84,7 +84,7 @@ function eliminarProduct() {
                 text: "Has eliminado un producto",
                 className: "info",
                 style: {
-                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    background: "linear-gradient(to right, #F01945, #ffc0cb)",
                 }
             }).showToast();
         })
@@ -113,7 +113,7 @@ function cleanCarrito() {
                 text: "Has eliminado todos los productos",
                 className: "info",
                 style: {
-                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    background: "linear-gradient(to right, #F01945, #ffc0cb)",
                 }
             }).showToast();
         }

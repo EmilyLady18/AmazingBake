@@ -455,17 +455,31 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: auto auto;
     grid-column-gap: 2em; }
+  .productos {
+    overflow-y: scroll;
+    height: 80vh;
+    background-color: #FFE3C9; }
+  .producto2 {
+    color: #FFE3C9;
+    text-align: center;
+    margin-top: 1em;
+    font-family: "DejaVu Sans"; }
   .productosH1 {
     font-size: 4em; }
   .contenedores {
     width: 100%;
     margin: 3em;
     padding: auto; }
-  .nav {
-    background-color: red; }
+  .eliminar {
+    width: 100%;
+    margin: 0.8em 0;
+    font-size: 1.6em;
+    font-family: "DejaVu Sans";
+    border: none;
+    outline: 0;
+    color: white; }
   .bgl {
-    background-color: pink;
-    overflow-y: scroll; }
+    background-color: #670d0f; }
   .button {
     width: 50%;
     margin: 1em 0;
