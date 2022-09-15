@@ -1,0 +1,90 @@
+[
+        {
+            "id":1 ,
+            "nombre":"Torta de corazon",
+            "precio": 3600 ,
+            "categoria": "Tortas" ,
+            "imagen":"../img/img.tortas/tortadecorazon.webp",
+            "descripcion":"Torta en con forma de corazon, decorada con ganache y perlas de color rosado con una frase en el centro",
+            "cantidad": 0,
+            "stock": true
+        },
+    
+        {
+            "id":2 ,
+            "nombre":"Magdalenas tutifruti",
+            "precio": 250,
+            "categoria": "Magdalena",
+            "imagen":"../img/img.magdalenas/magdalenasFrutosdelBosque.webp",
+            "descripcion":"Magdalenas elaboradas y decorada con frutos del bosque",
+            "cantidad": 0,
+            "stock": true
+        },
+
+        {
+            "id": 3 ,
+            "nombre": "Torta pinky",
+            "precio": 2000 ,
+            "categoria": "Tortas" ,
+            "imagen":"../img/img.tortas/tortapink.webp"  ,
+            "descripcion":"Torta redonda de color rosado con relleno de frutilla y decorada con una frase ene el centro",
+            "cantidad": 0,
+            "stock": true
+        },
+        
+        {
+            "id": 4,
+            "nombre":"Magdalenas  blueberry" ,
+            "precio": 300,
+            "categoria": "Magdalena" ,
+            "imagen":"../img/img.magdalenas/magdalenasBlueBerry.webp",
+            "descripcion": "Magdalenas elaborada y decorada con blueberry y chocolate",
+            "cantidad": 0,
+            "stock": true
+        },
+        
+        {
+            "id": 5 , 
+            "nombre": "Torta sweet dream",
+            "precio": 6950,
+            "categoria": "Torta",
+            "imagen":"../img/img.tortas/tortasweetdream.webp",
+            "descripcion":"Torta redonda de color rosa decoraciones con color amarrilo. violeta, celeste y verde, ademas de tener mariposas rosadas con detalles en amarillo y un osito mequeño de color azul",
+            "cantidad": 0,
+            "stock": true
+        },
+        
+        {
+            "id": 6,
+            "nombre":"Magdalena mouse",  
+            "precio": 360,
+            "categoria":"Magdalena",
+            "imagen": "../img/img.magdalenas/mousemag.webp",
+            "descripcion": "Magdalenas decoradas como un raton de color rosa, blanco o gris",
+            "cantidad": 0,
+            "stock": true
+        },
+        
+        {
+            "id": 7,
+            "nombre": "Torta te gree" ,
+            "precio":  6900 ,
+            "categoria": "Torta",
+            "imagen":"../img/img.tortas/tegreeHeart.webp",
+            "descripcion":"Torta redonda de color verde con decoraciones de color amarillo,verdes y con cerezas",
+            "cantidad": 0,
+            "stock": true
+        },
+        
+        {
+            "id":8 ,
+            "nombre": "Magdalena florales", 
+            "precio": 300 ,
+            "categoria": "Magdalena" , 
+            "imagen": "../img/img.magdalenas/magFloral.webp",
+            "descripcion": "Magdalenas decoradas con diversos tipos de flores",
+            "cantidad": 0,
+            "stock": true
+        }
+
+    ]

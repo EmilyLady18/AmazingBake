@@ -1,100 +1,151 @@
-const Productos =[{
-    id:1 ,
-    nombre:"Torta de corazon",
-    precio:3600 ,
-    categoria: "Tortas" ,
-    imagen:'../img/img.tortas/tortadecorazon.webp',
-    descripcion:'Torta en con forma de corazon, decorada con ganache y perlas de color rosado con una frase en el centro',
-},{
-    id:2 ,
-    nombre:"Magdalenas tutifruti",
-    precio: 250,
-    categoria: "Magdalena",
-    imagen:"../img/img.magdalenas/magdalenasFrutosdelBosque.webp",
-    descripcion:"Magdalenas elaboradas y decorada con frutos del bosque",
-},{
-    id: 3 ,
-    nombre: "Torta pinky",
-    precio: 2000 ,
-    categoria: "Tortas" ,
-    imagen:'../img/img.tortas/tortapink.webp'  ,
-    descripcion:'Torta redonda de color rosado con relleno de frutilla y decorada con una frase ene el centro',
-},{
-    id: 4,
-    nombre:"Magdalenas  blueberry" ,
-    precio: 300,
-    categoria: "Magdalena" ,
-    imagen:"../img/img.magdalenas/magdalenasBlueBerry.webp",
-    descripcion: "Magdalenas elaborada y decorada con blueberry y chocolate",
-},{
-    id: 5 , 
-    nombre: "Torta sweet dream",
-    precio: 6950,
-    categoria: "Torta",
-    imagen:"../img/img.tortas/tortasweetdream.webp",
-    descripcion:"Torta redonda de color rosa decoraciones con color amarrilo. violeta, celeste y verde, ademas de tener mariposas rosadas con detalles en amarillo y un osito mequeño de color azul",
-},{
-    id: 6,
-    nombre:"Magdalena mouse",  
-    precio: 360,
-    categoria:"Magdalena",
-    imagen: "../img/img.magdalenas/mousemag.webp",
-    descripcion: "Magdalenas decoradas como un raton de color rosa, blanco o gris",
-},{
-    id: 7,
-    nombre: "Torta te gree" ,
-    precio:  6900 ,
-    categoria: "Torta",
-    imagen:"../img/img.tortas/tegreeHeart.webp",
-    descripcion:"Torta redonda de color verde con decoraciones de color amarillo,verdes y con cerezas",
-},{
-    id:8 ,
-    nombre: "Magdalena florales", 
-    precio: 300 ,
-    categoria: "Magdalena" , 
-    imagen: "../img/img.magdalenas/magFloral.webp",
-    descripcion: "Magdalenas decoradas con diversos tipos de flores",
-}]
+const productos = [];
+const carrito = [];
+function stock() {
+    let url = "../js/json.json"
+    fetch(url)
+        .then(response => response.json().then(data => {
+            productos.push(...data);
+            menu();
+        }))
+}
+window.onload = () => {
+    stock()
+    let aux = solicitar();
+    if(aux !=null ){
+        carrito.push(...aux)
+        addItemsAlCarrito()
+    }
+}
 
- const contenedorProductos= document.getElementById('contenedorProductos')
+//Permite que se muestren los productos en la pagina
+const contenedorProductos = document.getElementById('contenedorProductos')
+function menu() {
+    for (const producto of productos) {
+        let contenedor = document.createElement('div');
+        contenedor.className = 'contenedores'
+        contenedor.innerHTML = `<img class="producImg" src="${producto.imagen}" alt="${producto.categoria}">
+                                <figcaption class="subTor">${producto.nombre}</figcaption>
+                                <p class="precTor"> ${producto.precio}$</p>
+                                <button class="button" id=${producto.id}>Agregar</button>`
+        contenedorProductos.append(contenedor)
+    } addItems()
+}
 
-for (const producto of Productos) {
-    let contenedor = document.createElement('div');
-    contenedor.className='contenedores'
-    contenedor.id= `${producto.id}` 
 
-    contenedor.innerHTML = `<img class="producImg" src="${producto.imagen}" alt="${producto.categoria}">
-                            <figcaption class="subTor">${producto.nombre}</figcaption>
-				            <p class="precTor"> ${producto.precio} $</p>
-                            <button id="button">Agregar</button>` 
-                                                   
-    contenedorProductos.append(contenedor)
-} 
-const button = document.querySelectorAll('#button');
-    button.forEach(productosCarrito => {
-        productosCarrito.addEventListener('click', carritoClick)
-    })  
+//funcion para que los elementos de agregen al carrito
+function addItems() {
+    const button = document.querySelectorAll('.button')
+    button.forEach((btn) => {
+        btn.onclick = () => {
+            let productoFind = productos.find((producto) => producto.id == btn.id)
+            let verifyCarrito = carrito.find((producto) => producto.id == productoFind.id)
+            if (verifyCarrito == undefined) {
+                carrito.push(productoFind);
+                addItemsAlCarrito()
+                guardarStorage()
+                Toastify({
+                    text: "Has agregado un producto",
+                    className: "info",
+                    style: {
+                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    }
+                }).showToast();
+            }
+        }
+    })
+}
+
+//funcion para que los productos selecionados se muestren en el carrito
+function addItemsAlCarrito() {
     const compra = document.querySelector('.offcanvas');
+    compra.innerHTML = ``;
+    for (const product of carrito) {
+        const cardProductos = document.createElement('div');
+        const compraCarrito = `<img class="producImg" src="${product.imagen}">
+                            <figcaption class="subTor">${product.nombre}</figcaption>
+                            <p class="precTor"> ${product.precio}</p>
+                            <button class="btnDel" >Eliminar</button>`;
+        cardProductos.innerHTML = compraCarrito
+        compra.append(cardProductos)
+    }
+    eliminarProduct()
+}
 
-    function carritoClick(event){
-        const boton = event.target;
-        const items = boton.closest('#contenedorProductos');
-        const nombreProduc =items.querySelector('.subTor').textContent;
-        const precioProduc =items.querySelector('.precTor').textContent;
-        const imagenProduc =items.querySelector('.producImg').src;
+//funcion para eliminar productos del carrito uno por uno
+function eliminarProduct() {
+    const eliminar = document.querySelectorAll('.btnDel');
+    eliminar.forEach((btnDel, index) => {
+        btnDel.addEventListener("click", () => {
+            carrito.splice(index, 1)
+            addItemsAlCarrito()
+            guardarStorage()
+            Toastify({
+                text: "Has eliminado un producto",
+                className: "info",
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                }
+            }).showToast();
+        })
+    })
+}
 
-        addItemsAlCarrito(nombreProduc,precioProduc,imagenProduc);
+//funcion para que los productos selecccionados se guarden aun cuando el usuario recarge la pagina
+function guardarStorage() {
+    sessionStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+//funcion para solicitar los datos posteriormente seleccionados por el usuario al haber recargado la pagina
+function solicitar() {
+    return JSON.parse(sessionStorage.getItem("carrito"))
+}
+ 
+//funcion para limpiar todo el carrito
+function cleantCarrito() {
+    carrito.splice(0);
+    addItemsAlCarrito();
+    let canasta = document.getElementById("carrito");
+    canasta.innerHTML = carrito.length == 0 && `<div class="d-block msgSinP"><h3>No hay productos</h3></div>`
+}
+
+
+//boton para finalizar el pedido
+const btnFinal = document.getElementById("btnFinalizar");
+btnFinal.onclick = () => {
+    if (usuarioNow != undefined && usuarioNow != "") {
+        condition = carrito.length != 0 && true;
+        if (condition) {
+            showMetPago()
+        }
+    } else {
+        Swal.fire("Registrar", "Para hacer un pedido tiene que logearse o registrarse", "warning")
     }
 
-    function addItemsAlCarrito(nombreProduc,precioProduc,imagenProduc){
-    const carrito = document.createElement('div');
-    const compraCarrito = `<img class="producImg" src="${imagenProduc}">
-                            <figcaption class="subTor">${nombreProduc}</figcaption>
-                            <p class="precTor"> ${precioProduc} $</p`
-    carrito.innerHTML= compraCarrito
-    compra.append(carrito)
-    
 
 }
-             
-    
+
+//boton para borrar el pedido
+const eliminar = document.getElementById("borrar");
+eliminar.onclick = () => {
+    condicion = carrito.length != 0 && true;
+    //Swal para la confirmacion de vaciado de Carrito
+    if (condicion) {
+        Swal.fire({
+            title: 'Vaciar Carrito',
+            text: '¿Desea vaciar el carrito?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Sí',
+            customClass: {
+                confirmButton: 'btnRed',
+            },
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire('Borrado', 'El carrito ha sido vaciado', 'success')
+                cleanCarrito();
+                guardarStorage();
+            }
+        })
+    }
+}
